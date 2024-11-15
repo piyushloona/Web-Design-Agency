@@ -1,0 +1,153 @@
+.prototype{
+    background: var(--header_bg);
+    .container{
+        max-width: 1240px;
+
+        .row{
+            width: 100%;
+            padding: 30px 0;
+            @include display(initial,initial);
+            margin: auto;
+            
+            .left{
+              position: relative;  
+                img{
+                position: absolute;
+                left: -100px;
+                top: -79px;
+                border-radius: 10px;
+                width: 670px;
+                @media($breckpoint_XL){
+                    width: 550px;
+                }
+                @media($breckpoint_LG){
+                    // width: 100%;
+                    // left: auto;
+                    // right: -10px;
+                    display: none;
+                }
+
+                }
+
+                .play{
+                    position: absolute;
+                    color: var(--black);
+                    font-size: 64px;
+                    top: 204px;
+                    left: 161px;
+                    border:1px solid var(--black);
+                    border-radius: 50%;
+                    padding: 10px;
+                    &:hover{
+                        color: var(--orange);
+                        border: 1px solid var(--orange);
+                    }
+                    @media($breckpoint_LG){
+                      
+                        display: none;
+                    }
+                }
+
+
+
+            }
+
+            .right{
+                padding: 20px 10px;
+                padding-left: 64px;
+                // position: relative;
+                // &::after{
+                //     content: "";
+                //     position: absolute;
+                //     background-image: url(../images/form_back.png);
+                //     background-repeat: no-repeat;
+                //     bottom: 0px;
+                //     height: 100%;
+                //     width: 100px;
+                //     right: 0px;
+                // }
+                @media($breckpoint_LG){
+                 padding: 0;
+                }
+                h1{
+                    color: var(--white);
+                    font-size: 42px;
+                    font-weight: 400;
+                    span{
+                        color: var(--orange);
+                    }
+                    @media($breckpoint_XL){
+                        font-size: 27px;
+                    }
+                    br{
+                    @media($breckpoint_LG){
+                        display: none;
+                    }
+                }
+                @media($breckpoint_340){
+                    font-size: 19px;
+                }
+                }
+                p{
+                    color: var(--white);
+                    padding: 30px 0;
+                    font-weight: 400;
+                    br{
+                        @media($breckpoint_XL){
+                            display: none;
+                        }    
+                    }
+                    @media($breckpoint_XL){
+                     padding: 5px;
+                    }
+                }
+                .form-floating{
+                    .form-control{
+                        border-radius: 30px;
+                        background: transparent;
+                        color: var(--white);
+                        &:focus{
+                            box-shadow: none;
+                            border: 1px solid var(--orange);
+                        }
+                        @media($breckpoint_400){
+                            border-radius: 16px;
+                        }
+
+                    }
+                    label{
+                        color: var(--white);
+                        padding: 14px 15px;
+                    }
+                }
+                textarea{
+                    margin-top: 15px;
+                    border-radius: 18px;
+                    background: transparent;
+                    color: var(--white);
+                    &:focus{
+                        box-shadow: none;
+                        border: 1px solid var(--orange);
+                    }
+                    &::placeholder{
+                        color: var(--white);
+                    }
+                }
+
+                .sub{
+                    background: transparent;
+                    border: 2px solid var(--orange);
+                    border-radius: 30px;
+                    font-family: bold;
+                    margin-top: 20px;
+                    padding: 7px 54px;
+                    font-size: 20px;
+                    transition: all 0.5s linear;
+                    &:hover{
+                        background: var(--orange);
+                    }
+                }
+            }
+        }
+    }
+}

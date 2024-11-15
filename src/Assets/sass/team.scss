@@ -1,0 +1,89 @@
+.team{
+    .container{
+        max-width: 1240px;
+        padding: 20px;
+        .creative{
+            text-align: center;
+            font-weight: 400;
+            font-size: 46px;
+            span{
+                color: var(--orange);
+            }
+            
+        }
+        .commited{
+            text-align: center;
+            color: var(--grey);
+            padding-top: 15px;
+        }
+        .member{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .manager{
+                            position: relative;
+                            .mem{
+                                position: absolute;
+                                top:0px;
+                                @include display(initial,end);
+                                flex-direction:column;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 0;
+                                transform:scaleY(0.5);
+                                transition: all 0.4s linear;
+                                .icons{
+                                    @include display(end,initial);
+                                    flex-direction: column;
+                                    padding: 24px;
+                                    .facebook{
+                                        color: var(--white);
+                                        font-size: 30px;
+                                        background: var(--orange);
+                                        border:1px solid var(--orange);
+                                        margin-bottom: 10px;
+                                        border-radius: 20px;
+                                        padding: 7px;
+                                        transition:  all 0.5s linear;
+                                        &:hover{
+                                            color: var(--orange);
+                                            background: var(--white);
+                                            border: none;
+                                        }
+                                        
+                                    }
+
+                                }
+                                .doe{
+                                    background: var(--light_grey);
+                                    text-align: center;
+                                    padding: 20px ;
+
+                                    h3{
+                                        font-size: 22px;
+                                        margin: 0;
+                                    }
+                                    p{
+                                        color: var(--grey);
+                                    }
+                                }
+                            }
+                            img{
+                                width: 100%;
+                                border-radius: 20px;
+                              
+                            }
+                            &:hover{
+                                .mem{
+                                    opacity: 1;
+                                    transform: scaleY(1);
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

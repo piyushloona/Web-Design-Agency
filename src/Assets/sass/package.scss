@@ -1,0 +1,169 @@
+.package{
+    .container{
+        max-width: 1240px;
+        .web{
+            padding: 50px 20px;
+            .pack{
+                text-align: center;
+                font-size: 35px;
+                font-weight: 400;
+                span{
+                    color: var(--orange);
+                }
+                
+            }
+            .offer{
+                text-align: center;
+                padding-top: 14px;
+                color: var(--grey);
+
+            
+            }
+            .row{
+                width: 100%;
+                margin-top: 92px !important;
+                @include display(initial,initial);
+                margin: auto;
+                
+                .landing{
+                    background: var(--light);
+                    border-radius: 20px;
+                    padding: 70px 10px 122px 55px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: all 0.5s linear;
+                    margin-bottom: 49px;
+                    @media($breckpoint_LG){
+                        padding: 70px 10px 122px 22px;
+                    
+                     }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        background-image: url(../images/landing.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 100%;
+                        width: 100%;
+                        top:2px;
+                        right: 2px;
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    h3{
+                        font-weight: 400;
+                         @media($breckpoint_LG){
+                            font-size: 20px;
+                         }
+                    }
+                    h1{
+                        font-weight: 500;
+                        padding-top: 35px;
+                        margin-bottom: 35px;
+                    }
+                    .terms{
+                        @include display(initial,initial);
+                        .check{
+                            color: var(--green);
+                            margin-right: 14px;
+                            font-size: 19px;
+                            margin-top: 4px;
+                        }
+                    }
+                    .plane{
+                         background: transparent;
+                         border:2px solid var(--orange);
+                         color: var(--black);
+                         padding: 10px 41px;
+                        transition: all 0.5s linear;
+                        border-radius: 30px;
+                        margin: auto;
+                        margin-left: 38px;
+                        @include display(initial,center);
+                         &:hover{
+                            background: var(--orange);
+                            color: var(--white);
+                         }
+                         @media($breckpoint_LG){
+                            margin-left: 0px;
+                         }
+                    }
+                }
+
+
+                .app{
+                    background: var(--header_bg);
+                    border-radius: 20px;
+                    padding: 70px 10px 122px 55px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: all 0.5s linear;
+                    margin-bottom: 49px;
+                    @media($breckpoint_LG){
+                        padding: 70px 10px 122px 22px;
+                    
+                     }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        background-image: url(../images/landing.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 100%;
+                        width: 100%;
+                        top:2px;
+                        right: 2px;
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    h3{
+                        font-weight: 400;
+                        color: var(--white);
+                        @media($breckpoint_LG){
+                            font-size: 20px;
+                         }
+                    }
+                    h1{
+                        font-weight: 500;
+                        padding-top: 35px;
+                        margin-bottom: 35px;
+                        color: var(--white);
+
+                    }
+                    .terms{
+                        @include display(initial,initial);
+                        .check{
+                            color: var(--green);
+                            margin-right: 14px;
+                            font-size: 19px;
+                            margin-top: 4px;
+                        }
+                        p{
+                            color: var(--white);
+                        }
+                    }
+                    .plane{
+                         background: transparent;
+                         border:2px solid var(--orange);
+                         color: var(--white);
+                         padding: 10px 41px;
+                        transition: all 0.5s linear;
+                        border-radius: 30px;
+                        margin: auto;
+                        margin-left: 38px;
+                        @include display(initial,center);
+                         &:hover{
+                            background: var(--orange);
+                            color: var(--white);
+                         }
+                         @media($breckpoint_LG){
+                            margin-left: 0px;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}

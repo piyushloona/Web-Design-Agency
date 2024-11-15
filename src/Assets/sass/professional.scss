@@ -1,0 +1,189 @@
+.professional {
+  padding: 52px 32px;
+  background: var(--light_grey);
+ 
+  .container {
+    max-width: 1240px;
+    .satis {
+      background-image: url(../images/professional_back.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 30px 0;
+      .p_first {
+        text-align: center;
+        h2 {
+          color: var(--black);
+          font-size: 65px;
+          font-weight: 600;
+          margin: 0;
+          opacity: 0.9;
+          span {
+            color: var(--orange);
+            // margin-left: -15px;
+          }
+        }
+        p {
+          color: var(--black);
+          font-size: 19px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .images {
+      position: relative;
+      @include display(initial, space-between);
+      @media($breckpoint_LG){
+        // flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .creation {
+        @media($breckpoint_LG){
+          flex-basis: 50%;
+        }
+        @media($breckpoint_SM){
+          flex-basis: 100%;
+        }
+        .left {
+          .text {
+            top: 63px;
+            position: absolute;
+            left: 64px;
+            display: none;
+            h3 {
+              color: var(--white);
+              font-size: 23px;
+            }
+          }
+          img {
+            height: 200px;
+            width: 220px;
+            border-radius: 10px;
+            transition: all 0.4s linear;
+            @media($breckpoint_XL){
+              width: 168px;
+            }
+            @media($breckpoint_LG){
+              width: 97%;
+              margin-bottom: 20px;
+            }
+          }
+          &:hover {
+            img {
+              transform: rotate(5deg);
+            }
+            .text {
+              display: block;
+              h3 {
+                color: var(--orange);
+                font-weight: bold;
+              }
+            }
+            filter: brightness(68%);
+          }
+        }
+      }
+    }
+
+    .development {
+      margin-top: 100px;
+      // background-color: ;
+      padding: 30px 7px;
+   
+      .full {
+        @media($breckpoint_LG){
+          text-align: center;
+        }
+        h2 {
+          font-weight: 400;
+          font-size: 40px;
+          span {
+            color: var(--orange);
+          }br{
+          @media($breckpoint_XL){
+            display: none;
+          }
+          
+        }
+        @media($breckpoint_340){
+          font-size: 27px;
+        }
+        @media($breckpoint_400){
+          font-size: 24px;
+        }
+        }
+        p {
+          color: var(--grey);
+          padding-top: 15px;
+          
+          br{
+          @media($breckpoint_LG){
+            display: none;
+          }
+          }
+          @media($breckpoint_LG){
+            font-size: 13px;
+          }  
+        }
+        .view {
+          background-color: none;
+          border: 2px solid var(--orange);
+          border-radius: 30px;
+          padding: 10px 24px;
+          transition: all 0.4s linear;
+          margin-top: 30px;
+          &:hover {
+            background: var(--orange);
+            color: var(--white);
+          }
+        }
+      }
+      .develop {
+        @media($breckpoint_LG){
+          margin-top: 20px;
+        }
+        @media($breckpoint_SM){
+          text-align: center;
+        }
+        .cloud_icon {
+          border: 1px solid var(--orange);
+          border-radius: 50%;
+          font-size: 75px;
+          padding: 18px;
+          
+        }
+        h3 {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+        p {
+          color: var(--grey);
+          padding-top: 13px;
+        }
+        .more {
+          a {
+            color: var(--black);
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.5s linear;
+          }
+          &:hover {
+            a {
+              color: var(--orange);
+              span {
+                .trend {
+                  transform: rotateY(10deg);
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          .cloud_icon {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+}

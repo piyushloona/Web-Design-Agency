@@ -1,0 +1,121 @@
+.footer{
+    background: var(--header_bg);
+    .container{
+        max-width: 1240px;
+        .row{
+            padding: 50px 20px;
+            @media($breckpoint_SM){
+                padding: 50px 0;
+            }
+            .about{
+                padding: 20px;
+                h2{
+                    color: var(--white);
+                    font-size: 28px;
+                }
+                hr{
+                    color: var(--light_grey);
+                }
+                p{
+                    color: var(--grey);
+                }
+                ul{
+                    padding: 0px;
+                    color: var(--white);
+                    li{
+                        padding-bottom: 17px;
+                        @include display(initial,initial);
+                        a{
+                            color: var(--white);
+                            text-decoration: none;
+                            transition: all 0.5s linear;
+                            &:hover{
+                                color: var(--orange);
+                            }
+                        }
+                        .icons{
+                            // @include display(initial,initial);
+                            margin-left: 30px;
+                            .facebook{
+                                font-size: 20px;
+                                margin: 0 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .recent{
+                padding: 20px;
+                h2{
+                    color: var(--white);
+                    font-size: 28px;
+
+                }
+                hr{
+                    color: var(--light_grey);
+                }
+                .date{
+                    color: var(--grey);
+                }
+                .ways{
+                    text-decoration: none;
+                    color: var(--white);
+                    padding-top: 10px;
+                    br{
+                    @media($breckpoint_SM){
+                        display: none;
+                    }
+                }
+                }
+            }
+
+
+            .letter{
+                padding: 20px;
+                h2{
+                    color: var(--white);
+                    font-size: 28px;
+                }
+                hr{
+                    color: var(--white);
+
+                }
+                p{
+                    color: var(--grey);
+                    padding-top: 13px;
+                }
+                .form-control{
+                    background: transparent;
+                    text-align: center;
+                    border: 1px solid var(--grey);
+                    border-radius: 30px;
+                    color: var(--white);
+                    padding: 10px;
+                    &:focus{
+                        box-shadow: none;
+                        border: 1px solid var(--orange);
+                    }
+                    &::placeholder{
+                        color: var(--white);
+
+                    }
+                }
+                .subscribe{
+                    margin-top: 20px;
+                    background: none;
+                    border: 1px solid var(--orange);
+                    border-radius: 30px;
+                    padding:10px 50px;
+                    width: 100%;
+                    transition: all .5s linear;
+                    &:hover{
+                        background-color: var(--orange);
+                    }
+
+                }
+            }
+        }
+
+    }
+}

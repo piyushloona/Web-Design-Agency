@@ -1,0 +1,95 @@
+.lead{
+    margin-top: 103px;
+    padding: 52px 32px;
+    background: var(--header_bg);
+    // height: 100vh;
+    overflow: hidden;
+    position: relative;
+    @media($breckpoint_MD){
+        padding: 52px 15px;;
+    }
+    @media($breckpoint_LG){
+        // margin-top: 0px;
+    }
+    // &::after{
+    //     position: absolute;
+    //     content: "";
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: url(../images/lead_back.svg);
+    //     top:0;
+    // }
+    .container{
+        max-width: 1240px;
+       
+        .row{
+            width: 100%;
+            @include display(center,initial);
+            .lead-left{
+                
+                img{
+                    padding-left: 20px;
+                }
+                h1{
+                    font-size: 78px;
+                    color: var(--white);
+                    font-weight: 600;
+                   
+                    span{
+                        color: var(--orange);
+                    }
+                    br{
+                    @media($breckpoint_XL){
+                        display: none;
+                    }
+                   
+                }
+                @media($breckpoint_SM){
+                    font-size: 58px;
+                }
+                @media($breckpoint_449){
+                    font-size: 40px;
+                }
+
+                }
+                p{
+                    color: var(--grey);
+                    font-weight: 500;
+                    br{
+                        @media($breckpoint_XL){
+                            display: none;
+                        }
+                    }
+                }
+                .read{
+                    background: none;
+                    border:2px solid var(--orange);
+                    transition: all 0.5s linear;
+                    border-radius: 30px;
+                    color: var(--white);
+                    padding:10px 36px;
+                    margin-top: 50px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover{
+                        background: var(--orange);
+                    }
+                }
+            }
+            .lead-right{
+                position: relative;
+                padding:50px 30px;
+                @include display(center,initial);
+                .first_pic{
+                    
+
+                }
+                .second_pic{
+                    position: absolute;
+                    left: -150px;
+                    
+                }
+            }
+        }
+    }
+};

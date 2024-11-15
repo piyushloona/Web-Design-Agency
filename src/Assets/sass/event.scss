@@ -1,0 +1,70 @@
+.event{
+    background-image: url(../images/event.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .container{
+        max-width: 1240px;
+        .up{
+            padding: 80px 30px;
+            h1{
+                text-align: center;
+                font-weight: 400;
+                color: var(--white);
+                span{
+                    color: var(--orange);
+                }
+            }
+            p{
+                color: var(--grey);
+                text-align: center;
+                padding-top: 14px;
+            }
+            .email{
+                @include display(center,center);
+                margin-top: 30px;
+                @media($breckpoint_SM){
+                    flex-direction: column;
+                }
+                input{
+                    padding: 10px 5px;
+                    border-radius: 30px;
+                    padding-left: 27px;
+                    border: 1px solid var(--grey);
+                    width: 436px;
+                    background: transparent;
+                    color: var(--white);
+                    &:focus{
+                        border:1px solid var(--orange);
+                    }
+                    @media($breckpoint_SM){
+                        width: 319px;
+                    }
+                    @media($breckpoint_340){
+                        width: 272px;
+                    }
+                    
+                }
+                .go{
+                    margin-left: 20px;
+                    background: transparent;
+                    border: 2px solid var(--orange);
+                    padding: 12px 75px;
+                    transition: all 0.4s linear;
+                    color: var(--white);
+                    border-radius: 30px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    &:hover{
+                        background: var(--orange);
+                        
+                    }
+                    @media($breckpoint_SM){
+                     margin-top: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}

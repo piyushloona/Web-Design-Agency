@@ -1,0 +1,104 @@
+.news{
+    .container{
+        max-width: 1240px;
+        .recent{
+            padding: 50px 30px;
+            @media ($breckpoint_MD) {
+                padding:  50px 0px;
+            }
+            .rec{
+                color: var(--black);
+                text-align: center;
+                font-weight: 400;
+                span{
+                    color: var(--orange);
+
+                }
+            }
+            .check{
+                text-align: center;
+                color: var(--grey);
+                padding-top: 15px;
+            }
+            .row{
+                padding: 30px 10px;
+                @include display(initial,initial);
+                margin: auto;
+                .easy{
+                    .images{
+                        img{
+                            width: 93%;
+                            border-radius: 10px;
+                            transition: all 0.4s linear;
+                            @media($breckpoint_MD){
+                                width: 100%;
+                            }
+
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+
+                        }
+                    }
+                    .date{
+                        padding-top: 45px;
+                        @include display(start,initial);
+                        padding:20px;
+                        @media($breckpoint_ESM){
+                            flex-direction: column;
+                        }
+                        .ap{
+                            color: var(--black);
+                            font-size: 14px;
+                            margin-right: 30px;
+                            @media($breckpoint_ESM){
+                                margin-bottom: 0;
+                            }
+                        }
+                        .many{
+                            text-decoration: none;
+                            color: var(--black);
+                            font-size: 14px;
+                            margin-right: 30px;
+                            transition: all 0.5s linear;
+                            &:hover{
+                                color: var(--orange);
+                            }
+                        }
+                     
+                    }
+                    .feedback{
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                    .such{
+                        color: var(--grey);
+                        font-weight: 400;
+                        font-size: 14px;
+                        br{
+                            @media($breckpoint_LG){
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .continue{
+                        color: var(--black);
+                        transition: all 0.5s linear;
+                        text-decoration: none;
+                        font-size: 18px;
+                        &:hover{
+                            color: var(--orange);
+                        }
+                    }   
+                
+                    &:hover{
+                        .feedback{
+                            color: var(--orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

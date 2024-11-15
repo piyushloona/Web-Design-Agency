@@ -1,0 +1,37 @@
+:root {
+    
+  }
+
+
+  @mixin display($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+  }
+
+
+  @import './theme.scss';
+
+  @import './header.scss';
+
+  @import'./lead.scss';
+
+  @import './company.scss';
+
+  @import './professional.scss';
+  
+  @import './prototype.scss';
+
+  @import './affordable.scss';
+
+
+  @import './team.scss';
+
+  @import './package.scss';
+
+  @import './event.scss';
+
+  @import './news.scss';
+
+
+  @import './footer.scss';
